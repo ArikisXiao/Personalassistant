@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.MainActivity"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <Button
+        android:id="@+id/btn_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="事    件"
+        android:textSize="18sp">
+    </Button>
+    <Button
+        android:id="@+id/btn_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="账    单"
+        android:textSize="18sp">
+    </Button>
+    <Button
+        android:id="@+id/btn_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新    闻"
+        android:textSize="18sp">
+    </Button>
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个人设置"
+        android:textSize="18sp">
+    </Button>
+
+</LinearLayout>
