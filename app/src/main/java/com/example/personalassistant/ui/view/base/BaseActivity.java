@@ -33,5 +33,4 @@ public abstract class BaseActivity extends AppCompatActivity {
     /** 初始化监听器*/
     public abstract void initListener();
 
-
 }

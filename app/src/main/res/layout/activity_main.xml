@@ -3,38 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.view.MainActivity"
-    android:orientation="vertical"
-    android:padding="40dp">
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ff33b5e5"
+        android:fitsSystemWindows="true">
 
-    <Button
-        android:id="@+id/btn_event"
+        <TextView
+            android:id="@+id/tv_main_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="事件提醒"
+            android:textColor="#ffffff" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.example.personalassistant.utils.CustomViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.example.personalassistant.utils.CustomViewPager>
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/bottom_navigation_bar_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:text="事    件"
-        android:textSize="18sp">
-    </Button>
-    <Button
-        android:id="@+id/btn_bill"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="账    单"
-        android:textSize="18sp">
-    </Button>
-    <Button
-        android:id="@+id/btn_news"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="新    闻"
-        android:textSize="18sp">
-    </Button>
-    <Button
-        android:id="@+id/btn_setting"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="个人设置"
-        android:textSize="18sp">
-    </Button>
+        app:bnbBackgroundColor="?android:attr/windowBackground"
+        app:bnbActiveColor="#ff33b5e5"
+        app:bnbInactiveColor="#000000">
+    </com.ashokvarma.bottomnavigation.BottomNavigationBar>
+
 
 </LinearLayout>
