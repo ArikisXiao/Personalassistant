@@ -96,7 +96,7 @@ public class MainActivity extends BaseActivity {
                         tvToolbarTitle.setText("记账本");
                         break;
                     case 2:
-                        tvToolbarTitle.setText("新闻");
+                        tvToolbarTitle.setText("热点话题");
                         break;
                     case 3:
                         tvToolbarTitle.setText("设置");
